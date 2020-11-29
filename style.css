@@ -1,0 +1,251 @@
+:root {
+    --color-white: #fff;
+    --color-black: #000;
+    --color--text: #5F6368;
+    --color-ui-foreground: #f8f9fa;
+    --color--footer: #70757a;
+    --color--border: #dfe1e5;
+    --color--footer-border: #dadce0;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    color: var(--color--text);
+    font-family: arial, sans-serif;
+    box-sizing: border-box;
+}
+
+ul, li, a, p {
+    padding: 0;
+    margin: 0;
+}
+
+ul, li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+            /* Nav styling */
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 60px;
+}  
+
+.nav_list {
+    display: flex;
+    align-items: center;
+}
+
+.nav_item {
+    margin-right: 20px;
+}
+
+.nav_item a {
+    color: var(--color--text);
+    font-size: 13px;
+}
+
+.nav_item img  {
+   position: relative;
+   top: 2px;
+}
+
+.account {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.account a {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background-image: url(./assets/DSC09345.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+
+            /* Main styling */
+
+.main_google_page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo {
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 20px;
+}
+
+            /* Search bar styling */
+
+.main-form {
+    max-width: 584px;
+    margin: 0 auto;
+}
+
+
+.search_group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 46px;
+    width: 100%;
+    border: 1px solid var(--color--border);
+    border-radius: 24px;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    -ms-border-radius: 24px;
+    -o-border-radius: 24px;
+}
+
+input[type="text"] {
+    background-color: var(--color-white);
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+#loupe {
+    height: 15px;
+    margin-top: 5px;
+    margin-left: 17px;
+}
+
+#micro{
+    height: 25px;
+    margin-right: 17px;
+}
+
+.forms {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.search_group:hover {
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+    border-color: rgba(223,225,229,0);
+} 
+
+input[type="submit"] {
+    border: none;
+    font-size: 14px;
+    font-family: Arial,sans-serif;
+    height: 36px;
+    padding: 0 16px;
+    margin: 5px 4px;
+    background-color: var(--color-ui-foreground);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    cursor: pointer;
+}
+
+.lang  {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 15px;
+
+}
+
+            /* Footer styling  */
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    color: var(--color--footer);
+    background-color: var(--color-ui-foreground);
+    border-top: 1px solid var(--color--footer-border);
+}
+
+.fbar1 {
+    height: 40px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border-bottom: 1px solid var(--color--footer-border);
+} 
+
+span {
+    margin-left: 27px;
+} 
+
+.fbar2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+}
+
+
+
+.links1 > a {
+    padding-left: 27px;
+}
+
+.links2 > a {
+    padding-right: 27px;
+} 
+
+
+.fbar2 a {
+    text-decoration: none;
+    color: inherit;  
+}
+
+a:hover {
+    text-decoration: underline;
+}
+  
+
+@media (max-width: 805px) {
+    .fbar2 {
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        height: 80px;
+    } 
+    .links1 > a {
+        padding: 0 27px 0 0; 
+    }
+    
+}
+
+@media (max-width: 640px) {
+    .main-form {
+        padding: 0 20px;
+    }
+}
+
+
+
